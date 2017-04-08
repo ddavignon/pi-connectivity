@@ -1,5 +1,17 @@
 # Raspberry Pi connectivity using node-ssdp
 
+### Project Description
+
+This project utilizes the SSDP protocol to send an unkown host address back to an express server running locally on a laptop with a SSDP server as well. By utilizing the SSDP connectivity, once a device is found it will send the host information to the express server, in which the express server will respond with a config.json file to configure the pi.
+
+##### Todo
+
+* Client.js needs to configure wifi, just prints response to console as of now
+
+* User interface to run application, currently all CLI
+
+* Add camera functionality on pi
+
 ### Raspberry Pi Configuration
 
 The Pi is configured to auto connect to a laptop hotspot with given ssid and password
