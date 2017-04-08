@@ -6,9 +6,8 @@ The Pi is configured to auto connect to a laptop hotspot with given ssid and pas
 
 Things to note:
 
-`/etc/network/interfaces`
+/etc/network/interfaces
 
-`
 source-directory /etc/network/interfaces.d
 
 auto lo
@@ -21,11 +20,10 @@ allow-hotplug wlan0
 iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp
-`
 
-`/etc/wpa_supplicant/wpa_supplicant.conf`
 
-`
+/etc/wpa_supplicant/wpa_supplicant.conf
+
 network={
     ssid="rasp-pi"
     psk="raspberrypi"
@@ -34,7 +32,6 @@ network={
     pairwise=CCMP
     auth_alg=OPEN
 }
-`
 
 ### Laptop Setup
 
@@ -53,3 +50,4 @@ run app.js on laptop
 then run client.js on rPi
 
 `node client.js`
+
